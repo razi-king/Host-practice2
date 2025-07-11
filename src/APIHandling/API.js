@@ -1,5 +1,6 @@
 import axios from "axios"
 
+//Fixed The Bugs
 const API=import.meta.env.mainAPI+"/Emp";
 export const getUser=()=> axios.get(`${API}/emp`);
 export const createUser=(data)=> axios.post(`${API}/saveEmp`,data);
