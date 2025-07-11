@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { createUser } from '../APIHandling/API';
 
 export default function RegisterForm() {
+    console.log(`Api Is:${createUser}`);
+    
     const [user,setUser]=useState({
         name:'',
         email:'',
